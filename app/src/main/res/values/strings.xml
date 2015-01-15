@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hero Painter</string>
+    <string name="action_settings">Settings</string>
+    <string name="undo_string">UNDO</string>
+    <string name="redo_string">REDO</string>
+    <string name="clear_setting">CLEAR</string>
+    <string name="save_setting">SAVE</string>
+
+</resources>
