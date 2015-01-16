@@ -84,9 +84,10 @@ public class TestActivity extends ActionBarActivity implements DrawingListener {
 
         // create bitmap screen capture
         Bitmap bitmap;
-        View v1 = myDrawingArea.getRootView();
+        View v1 = myDrawingArea;
         v1.setDrawingCacheEnabled(true);
-        bitmap = Bitmap.createBitmap(v1.getDrawingCache());
+        bitmap = myDrawingArea.getDrawingCache(true).copy(
+                Bitmap.Config.ARGB_8888, false);
         v1.setDrawingCacheEnabled(false);
 
         // store
